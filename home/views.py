@@ -10,4 +10,4 @@ def about(request):
     return render(request, 'home/about.html')
 
 def teacher(request):
-    return render(request, 'teacher/index.html')
+    return render(request, 'home/teacher.html')

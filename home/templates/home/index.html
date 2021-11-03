@@ -2,6 +2,7 @@
 {% load static %}
 {% block content %}
     <!-- slider section -->
+    <div class="teacher_section mt-4">
     <section class=" slider_section position-relative">
       <div id="Customcarousel1" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -99,67 +100,11 @@
   </div>
 
   <!-- about section -->
-  <section class="about_section layout_padding">
-    <div class="container">
-      <div class="box">
-        <div class="heading_container">
-          <h2>
-            <span>About Our School</span>
-          </h2>
-        </div>
-        <div class="img-box">
-          <img src="{% static 'images/about-img.png' %}" alt="">
-        </div>
-        <div class="row">
-          <div class="col-md-10 mx-auto">
-            <p>
-              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-            </p>
-          </div>
-        </div>
-        <div class="btn-box">
-          <a href="">
-            Read More
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
+  {% include 'about_section.html' %}
   <!-- end about section -->
 
   <!-- teacher section -->
-  <section class="teacher_section ">
-    <div class="container">
-      <div class="heading_container">
-        <h2 class="">
-          Our Teachers
-        </h2>
-      </div>
-      <div class="teacher_container layout_padding2">
-        <div class="row">
-          <div class="col-md-3 col-sm-6">
-            <div class="box">
-              <div class="img-box">
-                <img class="" src="{% static 'images/teacher-1.jpg' %}" alt="Card image cap">
-              </div>
-              <div class="detail-box">
-                <p>
-                  <h5>
-                    Rose Adams
-                  </h5>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="btn-box">
-        <a href="">
-          See More
-        </a>
-      </div>
-    </div>
-  </section>
+  {% include 'teacher_section.html' %}
   <!-- teacher section -->
 
   <!-- client section -->
