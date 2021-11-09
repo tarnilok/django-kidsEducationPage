@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">Visdor App</h1>
+<h1 align="center">Kids Education App</h1>
 
 
 <div align="center">
