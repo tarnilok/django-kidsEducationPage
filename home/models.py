@@ -1,4 +1,5 @@
 from django.db import models
+from django.db.models.fields import URLField
 
 class Contact(models.Model):
     name = models.CharField(max_length=50)
@@ -22,7 +23,8 @@ class Teacher(models.Model):
     phone_teacher = models.CharField(max_length=100)
     email_teacher = models.EmailField(max_length=254)
     speciality = models.ForeignKey(Branch, on_delete=models.CASCADE)
-    image = models.ImageField(upload_to='teacher/', default='avatar.png')
+    image = models.URLField()
+    # image = models.ImageField(upload_to='teacher/', default='avatar.png')
     created_date = models.DateTimeField(auto_now_add=True)
     update_date = models.DateTimeField(auto_now=True)
     
