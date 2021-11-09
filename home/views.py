@@ -7,7 +7,7 @@ from .models import Teacher
 # Create your views here.
 
 def home(request):
-    teachers = Teacher.objects.order_by('speciality').distinct()
+    teachers = Teacher.objects.distinct('speciality')
     form = ContactForm()
     if request.method == 'POST':
         form = ContactForm(request.POST)
