@@ -2,6 +2,11 @@
 {% load static %}
 {% block content %}
     <!-- slider section -->
+    {% if messages %} {% for message in messages %} {% if message.tags == 'success' %}
+    <div class="alert alert-primary container" style="width: 80%;">{{ message }}</div>
+    {% elif message.tags == 'error' %}
+    <div class="alert alert-danger container" style="width: 80%;">{{ message }}</div>
+    {% endif %} {% endfor %} {% endif %}
     <div class="teacher_section mt-4">
     <section class=" slider_section position-relative">
       <div id="Customcarousel1" class="carousel slide" data-ride="carousel">
@@ -197,7 +202,11 @@
   </section>
   <!-- end client section -->
 
+  {% include 'contact.html' %}
+  
   {% endblock content %}
+
+
 
 
 

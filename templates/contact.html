@@ -1,0 +1,39 @@
+  <!-- contact section -->
+  <div class="teacher_section">
+  <section class="contact_section ">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-7 mx-auto ">
+          <div class="heading_container">
+            <h2 class="">
+              Get In Touch
+            </h2>
+          </div>
+          <form action="" method="POST">
+              {% csrf_token %}
+            <div>
+              {{form.name}}
+            </div>
+            <div>
+              {{form.phone_number}}
+            </div>
+            <div>
+              {{form.email}}
+            </div>
+            <div>
+              {{form.message}}
+            </div>
+            <div class="d-flex  mt-3 ">
+              <button>
+                SEND
+              </button>
+            </div>
+          </form>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+  <!-- end contact section -->

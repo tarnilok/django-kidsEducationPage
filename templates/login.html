@@ -1,0 +1,16 @@
+{% extends 'base.html' %} 
+{% load crispy_forms_tags %} 
+{% block content %}
+<div class="d-flex justify-content-center mt-4">
+  <div style="width: fit-content; min-width: 400px">
+    <h3 style="text-align: center">Please Login</h3>
+    <hr />
+    <form action="" method="POST" enctype="multipart/form-data">
+      {% csrf_token %} {{ form |crispy }}
+      <div class="detailbuttons d-flex justify-content-center my-3">
+        <button class="btn btn-secondary btn-md btn-block mx-5" style="width: 200px" type="submit" aria-pressed="true">Login</button>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock content %}
