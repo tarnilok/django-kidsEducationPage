@@ -5,12 +5,12 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="">
       Demo
     </a>
      | 
-    <a href="https://{your-url-to-the-solution}">
-      Project
+    <a href="https://dj-proj-kidseducationpage.herokuapp.com/">
+      Heroku
     </a>
  
   </h3>
@@ -20,10 +20,10 @@
 
 ## Table of Contents
 
+- [Table of Contents](#table-of-contents)
 - [Overview](#overview)
-- [Built With](#built-with)
-- [Features](#features)
-- [How to use](#how-to-use)
+  - [Built With](#built-with)
+- [How To Use](#how-to-use)
 - [Acknowledgements](#acknowledgements)
 - [Contact](#contact)
 
